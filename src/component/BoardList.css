@@ -27,14 +27,85 @@
 .boardList table, th, td {
     border: 1px solid #ddd;
 }
-.boardHome button{
+
+.boardList .link{
+    color: black;
+    text-decoration: none;
+}
+.boardList .link:hover {
+    color: rgb(0, 0, 197); 
+}
+button{
     font-weight: 700;
     font-size: 12px;
     /* background: linear-gradient(160deg, #00416A, #e4e5e6 ); */
-    background-color: #00416A;
+    background-color: rgb(0, 40, 93);
     border-radius: 5px;
     border: none;
     color: white;
-    width: 60px;
+    width: 80px;
     height: 30px;
+    box-shadow: 2px 2px 2px rgb(48, 48, 48);
+    margin: 5px;
+}
+
+.boardDetail h2{
+    margin: 36px 0;
+}
+.boardDetail .content{
+    border: 1px solid black;
+    width: 70%;
+    height: 200px;
+    padding: 30px;
+    margin: 36px auto;
+}
+.boardDetail .title{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.boardDetail .writer{
+    text-align: end;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+.boardDetail .con{
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+
+.boardWriting{
+    width: 40%;
+    margin: 36px auto;
+    text-align: start;
+}
+.boardWriting .content{
+    display: flex;
+    flex-direction: column;
+}
+.boardWriting label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.boardWriting input[type="text"] {
+    border: 1.5px solid  rgb(0, 40, 93);
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.boardWriting label #r{
+    text-align: end;
+    font-size: 13px;
+    width: 70px;
+    padding: 0;
+    border: none;
+}
+.boardWriting #c{
+    height: 200px;
+}
+.boardWriting button{
+    margin: 0 -1px;
 }
