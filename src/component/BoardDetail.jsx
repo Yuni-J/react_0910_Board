@@ -20,17 +20,16 @@ const BoardDetail = () => {
     return (
         <div className='boardDetail board'>
             <h2>No.{board.id} / Board Detail Page</h2>
-            <div>
-                <button>Modify</button>
-                <button>Remove</button>
-                <Link to={'/'}><button>List</button></Link>
-            </div>
             <div className='content'>
                 <div className='title'>{board.title}</div>
                 <div className='writer'>{board.writer}[{board.reg_date.substring(0, board.reg_date.indexOf("T"))}]</div>
                 <div className='con'>{board.contents}</div>
             </div>
-
+            <div>
+                <Link to={`/modify/${board.id}`}><button>Modify</button></Link>
+                <button>Remove</button>
+                <Link to={'/'}><button>List</button></Link>
+            </div>
         </div>
     );
 };
